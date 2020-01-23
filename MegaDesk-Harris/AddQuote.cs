@@ -77,6 +77,7 @@ namespace MegaDesk_Harris
             DateTime currentDate = DateTime.Today;
             string thisDate = String.Format("{0: dd MMMM yyyy}", currentDate);
             myDate.Text = thisDate;
+            /*lalal */
         }
     }
 }
