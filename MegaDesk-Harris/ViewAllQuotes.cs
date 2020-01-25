@@ -12,14 +12,23 @@ namespace MegaDesk_Harris
 {
     public partial class ViewAllQuotes : Form
     {
-        public ViewAllQuotes()
+
+        private Form _mainmenu;
+        public ViewAllQuotes(Form mainMenu)
         {
             InitializeComponent();
+            _mainmenu = mainMenu;
         }
 
         private void ExitViewAllButton_Click(object sender, EventArgs e)
         {
+           _mainmenu.Show();
             this.Close();
+        }
+
+        private void ViewAllQuotes_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ((Form)this.Tag).Show();
         }
     }
 }

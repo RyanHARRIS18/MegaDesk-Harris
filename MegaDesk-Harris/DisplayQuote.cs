@@ -10,23 +10,22 @@ using System.Windows.Forms;
 
 namespace MegaDesk_Harris
 {
-    public partial class SearchQuotes : Form
+    public partial class DisplayQuote : Form
     {
-        public SearchQuotes()
+        public DisplayQuote()
         {
             InitializeComponent();
         }
 
-
-        private void ExitSearchPageButton_Click_1(object sender, EventArgs e)
+        private void DisplayQuote_Load(object sender, EventArgs e)
         {
-            ((Form)this.Tag).Show();
-            this.Close();
+
         }
 
-        private void SearchQuotes_FormClosed(object sender, FormClosedEventArgs e)
+        private void exitButton_Click(object sender, EventArgs e)
         {
-            ((Form)this.Tag).Show();
+          this.Close();
+           
         }
     }
 }

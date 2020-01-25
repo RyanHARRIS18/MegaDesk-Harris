@@ -60,6 +60,7 @@
             this.Controls.Add(this.ExitViewAllButton);
             this.Name = "ViewAllQuotes";
             this.Text = "ViewAllQuotes";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ViewAllQuotes_FormClosed);
             this.ResumeLayout(false);
 
         }

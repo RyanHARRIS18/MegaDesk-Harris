@@ -1,6 +1,6 @@
 ﻿namespace MegaDesk_Harris
 {
-    partial class AddQuote
+    partial class DisplayQuote
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddQuote));
             this.label1 = new System.Windows.Forms.Label();
             this.width_txt_label = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.depth_txt_label = new System.Windows.Forms.Label();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.myDate = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.NumberOfDrawersLabel = new System.Windows.Forms.NumericUpDown();
@@ -45,8 +45,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.PriceOutputBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.myDate = new System.Windows.Forms.Label();
-            this.SaveButton = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfDrawersLabel)).BeginInit();
@@ -55,26 +54,24 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(71, 45);
+            this.label1.Location = new System.Drawing.Point(58, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 17);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 20;
             this.label1.Text = "Customer Name: ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // width_txt_label
             // 
             this.width_txt_label.AutoSize = true;
-            this.width_txt_label.Location = new System.Drawing.Point(446, 45);
+            this.width_txt_label.Location = new System.Drawing.Point(433, 52);
             this.width_txt_label.Name = "width_txt_label";
             this.width_txt_label.Size = new System.Drawing.Size(52, 17);
-            this.width_txt_label.TabIndex = 1;
+            this.width_txt_label.TabIndex = 21;
             this.width_txt_label.Text = "Width: ";
-            this.width_txt_label.Click += new System.EventHandler(this.width_txt_label_Click);
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(636, 43);
+            this.numericUpDown1.Location = new System.Drawing.Point(623, 50);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             96,
             0,
@@ -87,25 +84,32 @@
             0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown1.TabIndex = 2;
+            this.numericUpDown1.TabIndex = 22;
             this.numericUpDown1.Value = new decimal(new int[] {
             24,
             0,
             0,
             0});
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(200, 40);
+            this.textBox1.Location = new System.Drawing.Point(187, 47);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(190, 22);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.TabIndex = 23;
+            // 
+            // depth_txt_label
+            // 
+            this.depth_txt_label.AutoSize = true;
+            this.depth_txt_label.Location = new System.Drawing.Point(433, 111);
+            this.depth_txt_label.Name = "depth_txt_label";
+            this.depth_txt_label.Size = new System.Drawing.Size(50, 17);
+            this.depth_txt_label.TabIndex = 24;
+            this.depth_txt_label.Text = "Depth:";
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(636, 99);
+            this.numericUpDown2.Location = new System.Drawing.Point(623, 106);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             48,
             0,
@@ -118,48 +122,43 @@
             0});
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown2.TabIndex = 5;
+            this.numericUpDown2.TabIndex = 25;
             this.numericUpDown2.Value = new decimal(new int[] {
             24,
             0,
             0,
             0});
-            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
-            // depth_txt_label
+            // myDate
             // 
-            this.depth_txt_label.AutoSize = true;
-            this.depth_txt_label.Location = new System.Drawing.Point(446, 104);
-            this.depth_txt_label.Name = "depth_txt_label";
-            this.depth_txt_label.Size = new System.Drawing.Size(50, 17);
-            this.depth_txt_label.TabIndex = 4;
-            this.depth_txt_label.Text = "Depth:";
-            this.depth_txt_label.Click += new System.EventHandler(this.label3_Click);
+            this.myDate.AutoSize = true;
+            this.myDate.Location = new System.Drawing.Point(184, 235);
+            this.myDate.Name = "myDate";
+            this.myDate.Size = new System.Drawing.Size(0, 17);
+            this.myDate.TabIndex = 37;
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(449, 349);
+            this.exitButton.Location = new System.Drawing.Point(327, 376);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(200, 48);
-            this.exitButton.TabIndex = 7;
+            this.exitButton.TabIndex = 27;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
-            this.exitButton.Click += new System.EventHandler(this.button2_Click);
-            this.exitButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.exitButton_MouseClick);
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(446, 158);
+            this.label2.Location = new System.Drawing.Point(433, 165);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 17);
-            this.label2.TabIndex = 8;
+            this.label2.TabIndex = 28;
             this.label2.Text = "Number of Drawers:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // NumberOfDrawersLabel
             // 
-            this.NumberOfDrawersLabel.Location = new System.Drawing.Point(636, 158);
+            this.NumberOfDrawersLabel.Location = new System.Drawing.Point(623, 165);
             this.NumberOfDrawersLabel.Maximum = new decimal(new int[] {
             7,
             0,
@@ -167,103 +166,84 @@
             0});
             this.NumberOfDrawersLabel.Name = "NumberOfDrawersLabel";
             this.NumberOfDrawersLabel.Size = new System.Drawing.Size(120, 22);
-            this.NumberOfDrawersLabel.TabIndex = 9;
-            this.NumberOfDrawersLabel.ValueChanged += new System.EventHandler(this.NumberOfDrawersLabel_ValueChanged);
+            this.NumberOfDrawersLabel.TabIndex = 29;
             // 
             // MaterialTextLabel
             // 
             this.MaterialTextLabel.AutoSize = true;
-            this.MaterialTextLabel.Location = new System.Drawing.Point(71, 101);
+            this.MaterialTextLabel.Location = new System.Drawing.Point(58, 108);
             this.MaterialTextLabel.Name = "MaterialTextLabel";
             this.MaterialTextLabel.Size = new System.Drawing.Size(98, 17);
-            this.MaterialTextLabel.TabIndex = 11;
+            this.MaterialTextLabel.TabIndex = 30;
             this.MaterialTextLabel.Text = "Material Type:";
-            this.MaterialTextLabel.Click += new System.EventHandler(this.MaterialTextLabel_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(72, 155);
+            this.label4.Location = new System.Drawing.Point(59, 162);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(122, 17);
-            this.label4.TabIndex = 12;
+            this.label4.TabIndex = 31;
             this.label4.Text = "Rush Order Days:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // MaterialTypeMenu
             // 
             this.MaterialTypeMenu.FormattingEnabled = true;
             this.MaterialTypeMenu.Items.AddRange(new object[] {
             ""});
-            this.MaterialTypeMenu.Location = new System.Drawing.Point(200, 97);
+            this.MaterialTypeMenu.Location = new System.Drawing.Point(187, 104);
             this.MaterialTypeMenu.Name = "MaterialTypeMenu";
             this.MaterialTypeMenu.Size = new System.Drawing.Size(190, 24);
-            this.MaterialTypeMenu.TabIndex = 14;
-            this.MaterialTypeMenu.SelectedIndexChanged += new System.EventHandler(this.MaterialTypeMenu_SelectedIndexChanged);
+            this.MaterialTypeMenu.TabIndex = 32;
             // 
             // RushOrderMenu
             // 
             this.RushOrderMenu.FormattingEnabled = true;
-            this.RushOrderMenu.Location = new System.Drawing.Point(200, 156);
+            this.RushOrderMenu.Location = new System.Drawing.Point(187, 163);
             this.RushOrderMenu.Name = "RushOrderMenu";
             this.RushOrderMenu.Size = new System.Drawing.Size(190, 24);
-            this.RushOrderMenu.TabIndex = 15;
-            this.RushOrderMenu.SelectedIndexChanged += new System.EventHandler(this.RushOrderMenu_SelectedIndexChanged);
+            this.RushOrderMenu.TabIndex = 33;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(512, 290);
+            this.label3.Location = new System.Drawing.Point(499, 297);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 17);
-            this.label3.TabIndex = 16;
+            this.label3.TabIndex = 34;
             this.label3.Text = "Price: ";
-            this.label3.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // PriceOutputBox
             // 
-            this.PriceOutputBox.Location = new System.Drawing.Point(566, 290);
+            this.PriceOutputBox.Location = new System.Drawing.Point(553, 297);
             this.PriceOutputBox.Name = "PriceOutputBox";
             this.PriceOutputBox.Size = new System.Drawing.Size(190, 22);
-            this.PriceOutputBox.TabIndex = 17;
-            this.PriceOutputBox.TextChanged += new System.EventHandler(this.PriceOutputBox_TextChanged);
+            this.PriceOutputBox.TabIndex = 35;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(80, 228);
+            this.label5.Location = new System.Drawing.Point(67, 235);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 17);
-            this.label5.TabIndex = 18;
+            this.label5.TabIndex = 36;
             this.label5.Text = "CurrentDate:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // myDate
+            // label6
             // 
-            this.myDate.AutoSize = true;
-            this.myDate.Location = new System.Drawing.Point(197, 228);
-            this.myDate.Name = "myDate";
-            this.myDate.Size = new System.Drawing.Size(0, 17);
-            this.myDate.TabIndex = 19;
-            this.myDate.Click += new System.EventHandler(this.myDate_Click);
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(162, 297);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(189, 17);
+            this.label6.TabIndex = 38;
+            this.label6.Text = "Your Quote has Been Saved";
             // 
-            // SaveButton
-            // 
-            this.SaveButton.Cursor = System.Windows.Forms.Cursors.PanWest;
-            this.SaveButton.Location = new System.Drawing.Point(200, 349);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(200, 48);
-            this.SaveButton.TabIndex = 20;
-            this.SaveButton.Text = "Save";
-            this.SaveButton.UseVisualStyleBackColor = true;
-            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
-            // 
-            // AddQuote
+            // DisplayQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.SaveButton);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.myDate);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.PriceOutputBox);
@@ -281,14 +261,9 @@
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.width_txt_label);
             this.Controls.Add(this.label1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.Name = "AddQuote";
-            this.Text = "Add a Quote";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddQuote_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddQuoteFormClose);
-            this.Load += new System.EventHandler(this.AddQuote_Load);
-            this.Leave += new System.EventHandler(this.exitButton_MouseClick);
+            this.Name = "DisplayQuote";
+            this.Text = "DisplayQuote";
+            this.Load += new System.EventHandler(this.DisplayQuote_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfDrawersLabel)).EndInit();
@@ -303,8 +278,9 @@
         private System.Windows.Forms.Label width_txt_label;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Label depth_txt_label;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Label myDate;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown NumberOfDrawersLabel;
@@ -315,7 +291,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox PriceOutputBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label myDate;
-        private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.Label label6;
     }
 }

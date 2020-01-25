@@ -57,6 +57,7 @@
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.ExitSearchPageButton);
             this.Name = "SearchQuotes";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SearchQuotes_FormClosed);
             this.ResumeLayout(false);
 
         }

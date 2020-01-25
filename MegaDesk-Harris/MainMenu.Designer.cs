@@ -45,6 +45,7 @@
             this.AddNewQuote.TabIndex = 0;
             this.AddNewQuote.Text = "Add New Quote";
             this.AddNewQuote.UseVisualStyleBackColor = true;
+            this.AddNewQuote.Click += new System.EventHandler(this.AddNewQuote_Click);
             this.AddNewQuote.MouseClick += new System.Windows.Forms.MouseEventHandler(this.AddNewQuote_MouseClick);
             // 
             // ViewQuotesButton

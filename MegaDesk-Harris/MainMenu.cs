@@ -12,9 +12,10 @@ namespace MegaDesk_Harris
 {
     public partial class MainMenu : Form
     {
+
         public MainMenu()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void MainMenu_Load(object sender, EventArgs e)
@@ -24,9 +25,10 @@ namespace MegaDesk_Harris
         /*New Quote Button*/
         private void AddNewQuote_MouseClick(object sender, MouseEventArgs e)
         {
-            var addNewQuoteForm = new AddQuote();
-            addNewQuoteForm.Show();
-            /* ((Control)sender).Hide(); */
+            var addNewSearchFrom = new AddQuote();
+            addNewSearchFrom.Tag = this;
+            addNewSearchFrom.Show();
+            Hide();
         }
 
 
@@ -40,19 +42,25 @@ namespace MegaDesk_Harris
         private void SearchQuotesButton_MouseClick(object sender, MouseEventArgs e)
         {
             var addNewSearchFrom = new SearchQuotes();
+            addNewSearchFrom.Tag = this;
             addNewSearchFrom.Show();
-           /* ((Control)sender).Hide(); */
+            Hide();
         }
 
         private void ViewQuotesButton_MouseClick(object sender, MouseEventArgs e)
         {
-            var addNewViewAllForm = new ViewAllQuotes();
-            addNewViewAllForm.Show();
-           /* ((Control)sender).Hide(); */
+            var addNewSearchFrom = new ViewAllQuotes(this);
+            addNewSearchFrom.Tag = this;
+            addNewSearchFrom.Show();
+            Hide();
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
         }
 
+        private void AddNewQuote_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
