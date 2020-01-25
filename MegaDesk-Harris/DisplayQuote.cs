@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace MegaDesk_Harris
 {
+   
     public partial class DisplayQuote : Form
     {
-        public DisplayQuote()
+        private Form _mainmenu;
+
+        public DisplayQuote(Form mainMenu)
         {
             InitializeComponent();
+            _mainmenu = mainMenu;
         }
 
         private void DisplayQuote_Load(object sender, EventArgs e)
@@ -24,8 +28,9 @@ namespace MegaDesk_Harris
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-          this.Close();
-           
+            _mainmenu.Show();
+            this.Close();
+
         }
     }
 }

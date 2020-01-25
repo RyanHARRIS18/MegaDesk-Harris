@@ -13,12 +13,14 @@ namespace MegaDesk_Harris
 {
     public partial class AddQuote : Form
     {
-        public AddQuote()
+        private Form _mainmenu;
+        public AddQuote(Form mainMenu)
         {
             InitializeComponent();
+            _mainmenu = mainMenu;
 
-            //populate drop down menu materials combobox
-            List<DesktopMaterial> materials =
+        //populate drop down menu materials combobox
+        List<DesktopMaterial> materials =
                 Enum.GetValues(typeof(DesktopMaterial))
                                 .Cast<DesktopMaterial>()
                                 .ToList();
@@ -44,6 +46,31 @@ namespace MegaDesk_Harris
             /*lalal */
 
         }
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            var addNewDisplayQuote = new DisplayQuote(_mainmenu);
+            addNewDisplayQuote.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ((Form)this.Tag).Show();
+            this.Close();
+        }
+
+        private void exitButton_MouseClick(object sender, MouseEventArgs e)
+        {
+            ((Form)this.Tag).Show();
+            this.Close();
+
+        }
+
+        private void AddQuoteFormClose(object sender, FormClosedEventArgs e)
+        {
+            ((Form)this.Tag).Show();
+
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -67,19 +94,6 @@ namespace MegaDesk_Harris
 
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            ((Form)this.Tag).Show();
-            this.Close();
-        }
-
-        private void exitButton_MouseClick(object sender, MouseEventArgs e)
-        {
-            ((Form)this.Tag).Show();
-            this.Close();
 
         }
 
@@ -163,18 +177,7 @@ namespace MegaDesk_Harris
 
         }
 
-        private void SaveButton_Click(object sender, EventArgs e)
-        {
-            var addNewDisplayQuote = new DisplayQuote();
-            addNewDisplayQuote.Show();
-            this.Hide();
-        }
-
-        private void AddQuoteFormClose(object sender, FormClosedEventArgs e)
-        {
-            ((Form)this.Tag).Show();
- 
-        }
+      
 
         /* public void getDateNow()
          {

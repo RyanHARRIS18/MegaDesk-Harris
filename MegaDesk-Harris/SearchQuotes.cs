@@ -12,15 +12,17 @@ namespace MegaDesk_Harris
 {
     public partial class SearchQuotes : Form
     {
-        public SearchQuotes()
+        private Form _mainmenu;
+        public SearchQuotes(Form mainMenu)
         {
             InitializeComponent();
+            _mainmenu = mainMenu;
         }
 
 
         private void ExitSearchPageButton_Click_1(object sender, EventArgs e)
         {
-            ((Form)this.Tag).Show();
+            _mainmenu.Show();
             this.Close();
         }
 

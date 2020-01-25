@@ -25,7 +25,7 @@ namespace MegaDesk_Harris
         /*New Quote Button*/
         private void AddNewQuote_MouseClick(object sender, MouseEventArgs e)
         {
-            var addNewSearchFrom = new AddQuote();
+            var addNewSearchFrom = new AddQuote(this);
             addNewSearchFrom.Tag = this;
             addNewSearchFrom.Show();
             Hide();
@@ -41,7 +41,7 @@ namespace MegaDesk_Harris
         /*Seach Button*/
         private void SearchQuotesButton_MouseClick(object sender, MouseEventArgs e)
         {
-            var addNewSearchFrom = new SearchQuotes();
+            var addNewSearchFrom = new SearchQuotes(this);
             addNewSearchFrom.Tag = this;
             addNewSearchFrom.Show();
             Hide();
